@@ -1,20 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text } from "react-native";
+import { StyledContainer, StyledText } from "../../../../styles/themes/theme";
 
-export default function BasePage() {
+export default function BasePage(): React.ReactElement {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <StyledContainer>
+      <StyledText>Olá, mundo!</StyledText>
       <StatusBar style="auto" />
-    </View>
+    </StyledContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
